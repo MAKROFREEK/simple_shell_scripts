@@ -66,7 +66,7 @@ echo "done"
 # optional install game section
 echo ""
 echo "Find game here:"
-echo -e "${YELLOW}https://steamdb.info/app/892970/${RESET}"
+echo -e "${YELLOW}https://steamdb.info${RESET}"
 #echo -e "steamcmd +login anonymous +force_install_dir /home/steam/Valheim +app_update 896660 validate +exit"
 #echo -e "In place of Valheim put game name, in place of 896660 use corresponding game ID found here https://steamdb.info/"
 
