@@ -83,5 +83,5 @@ read -p "App ID? " app_id
 #echo -e "${game_choice}"  "${app_id}"
 
 # install game
-echo "#{GREEN}Running: steamcmd +login anonymous +force_install_dir \"/home/steam/${game_choice}\" +app_update \"${app_id}\" validate +exit"
-/usr/games/steamcmd +login anonymous +force_install_dir "/home/steam/${game_name}" +app_update "${app_id}" validate +exit
+echo "${GREEN}Running: steamcmd +force_install_dir \"/home/steam/${game_choice}\" +login anonymous +app_update \"${app_id}\" validate +exit"
+/usr/games/steamcmd +force_install_dir "/home/steam/${game_name}" +login anonymous +app_update "${app_id}" validate +exit
