@@ -92,3 +92,4 @@ username="${username:-anonymous}"
 
 echo "${GREEN}Running: steamcmd +force_install_dir \"/home/steam/${game_choice}\" +login ${username} +app_update \"${app_id}\" validate +exit"
 /usr/games/steamcmd +force_install_dir "/home/steam/${game_name}" +login "${username}" +app_update "${app_id}" validate +exit
+echo Any issues with the script just use LinuxGSM next time.
