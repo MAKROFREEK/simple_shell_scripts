@@ -59,9 +59,9 @@ echo -e "${GREEN}steamcmd installation location: /usr/games/steamcmd"
 echo -e "updating steamcmd${RESET}"
 /usr/games/steamcmd +exit
 echo "done"
-echo -e "${GREEN}add temp alias${RESET}"
-alias steamcmd='/usr/games/steamcmd'
-echo "done"
+#echo -e "${GREEN}add temp alias${RESET}"
+#alias steamcmd='/usr/games/steamcmd'
+#echo "done"
 
 # optional install game section
 echo ""
@@ -84,4 +84,4 @@ read -p "App ID? " app_id
 
 # install game
 echo "#{GREEN}Running: steamcmd +login anonymous +force_install_dir \"/home/steam/${game_choice}\" +app_update \"${app_id}\" validate +exit"
-steamcmd +login anonymous +force_install_dir "/home/steam/${game_name}" +app_update "${app_id}" validate +exit
+/usr/games/steamcmd +login anonymous +force_install_dir "/home/steam/${game_name}" +app_update "${app_id}" validate +exit
